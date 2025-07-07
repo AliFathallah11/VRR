@@ -1,1 +1,1 @@
-print(ahla bikom)
+print(ahla)
