@@ -28,4 +28,4 @@ jobs:
         with:
           context: ./app4
           push: true
-          tags: alifathallah/yamnet-detector:latest
+          tags: alidbsense/dbsense:latest
