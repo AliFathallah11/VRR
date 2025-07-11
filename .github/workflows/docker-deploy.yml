@@ -28,4 +28,4 @@ jobs:
         with:
           context: ./app4
           push: true
-          tags: alidbsense/dbsense:latest
+          tags: alidbsense/dbsense1:latest
