@@ -29,9 +29,3 @@ jobs:
           context: ./app4
           push: true
           tags: alidbsense/dbsense1:latest
-<<<<<<< HEAD
-=======
-
-
-
->>>>>>> ddf130e (update workflow v2)
