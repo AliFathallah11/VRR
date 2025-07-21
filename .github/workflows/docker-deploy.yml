@@ -26,6 +26,6 @@ jobs:
       - name: Build and push image
         uses: docker/build-push-action@v5
         with:
-          context: ./app4
+          context: ./app5
           push: true
           tags: alidbsense/dbsense1:latest
