@@ -1,0 +1,9 @@
+numpy
+sounddevice
+tensorflow
+tensorflow_hub
+influxdb-client
+librosa
+scikit-learn
+lightgbm
+joblib

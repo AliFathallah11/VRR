@@ -1,0 +1,24 @@
+version: '3.7'
+
+services:
+  yamnet:
+    build: .
+    container_name: yamnet
+    devices:
+      - "/dev/snd:/dev/snd"
+    privileged: true
+    environment:
+      - INFLUXDB_URL=http://influxdb:8086
+      - INFLUXDB_TOKEN="T6lW1p5i8FWe_eZkbB3FuwKLqA_3I5NsTuYN0G3ecDeuEoAf-0cH7HllioCvi6f4zZzl-PGIJLI3UbyoYitP0w=="
+      - INFLUXDB_ORG=dbsense
+      - INFLUXDB_BUCKET=sound_bucket
+      - ALSADEV=default  # Configuration ALSA critique
+      - PULSE_SERVER=unix:/run/user/1002/pulse/native
+    volumes:     
+      - /run/user/1002/pulse:/run/user/1002/pulse/native
+      - ${XDG_RUNTIME_DIR}/pulse/native:/run/user/1002/pulse/native
+     # - ~/.config/pulse/cookie:/root/.config/pulse/cookie
+      - ./main.py:/app/main.py
+    stdin_open: true
+    tty: true
+   
