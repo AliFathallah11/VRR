@@ -8,7 +8,7 @@ import threading
 from influxdb_client import InfluxDBClient, Point, WriteOptions
 import datetime
 import librosa 
-#yekhdem jawou bh
+#bjeh rabi ekhdem
 # Configuration from environment variables
 """influxdb_url = os.getenv("INFLUXDB_URL", "http://influxdb:8086")
 token = os.getenv("INFLUXDB_TOKEN","T6lW1p5i8FWe_eZkbB3FuwKLqA_3I5NsTuYN0G3ecDeuEoAf-0cH7HllioCvi6f4zZzl-PGIJLI3UbyoYitP0w==") 
